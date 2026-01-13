@@ -1,0 +1,191 @@
+-<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setup tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Choix proposé</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Bienvenue Sur Setup Tracker</h1>
+            <p>Bienvenue sur le meilleur site de setup disponible, retrouvez le setup de vos rêves.</p>
+            <a href="#contact" class="btn">Inscrivez vous</a>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES (3 cartes) -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="cards-grid">
+                
+                <div class="card">
+                    <div class="card-image">
+                    <img src="images/setup.jpg" alt="Setup gaming">
+                    </div>
+                    <div class="card-content">
+                        <h3>1 Écran </h3>
+                        <p>Un choix simple mais intelligent.</p>
+                        <a href="#" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/maxresdefault.jpg" alt="Setup gaming">
+                    </div>
+                    <div class="card-content">
+                        <h3>Écran long</h3>
+                        <p>Pour un confort avantageux.</p>
+                        <a href="#" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                         <img src="images/2.jpg" alt="Setup gaming">
+                    </div>
+                    <div class="card-content">
+                        <h3> Écran multiple  </h3>
+                        <p>Multitâche.</p>
+                        <a href="#" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="apropos">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-image">
+                  <img src="images/Histoire.jpeg" id="Histoire">
+                </div>
+                <div class="about-text">
+                    <h3>Notre Histoire</h3>
+                    <p>Racontez votre histoire, votre mission, vos valeurs.</p>
+                    <p>Deuxième paragraphe avec plus de détails.</p>
+                    <a href="#" class="btn">Découvrir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION GALERIE -->
+    <section id="galerie">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">[IMG 1]</div>
+                <div class="gallery-item">[IMG 2]</div>
+                <div class="gallery-item">[IMG 3]</div>
+                <div class="gallery-item">[IMG 4]</div>
+                <div class="gallery-item">[IMG 5]</div>
+                <div class="gallery-item">[IMG 6]</div>
+                <div class="gallery-item">[IMG 7]</div>
+                <div class="gallery-item">[IMG 8]</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-container">
+                <form>
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="votre@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sujet">Sujet</label>
+                        <input type="text" id="sujet" placeholder="Objet du message">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Votre message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<div style="text-align: center; padding: 3rem 0;">
+    <button id="openGame" class="btn">🎮 Jouer à Space Invaders</button>
+</div>
+
+<div id="gameModal" class="game-modal">
+    <div class="game-container">
+        <button id="closeGame" class="close-game">✕</button>
+        <h2>Space Invaders</h2>
+        <p>Utilisez les flèches ← → pour bouger et ESPACE pour tirer</p>
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div class="game-score">Score: <span id="score">0</span></div>
+        <button id="restartGame" class="btn">Recommencer</button>
+    </div>
+</div@
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Description de votre entreprise.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">TW</a>
+                        <a href="#">IG</a>
+                        <a href="#">LI</a>
+                    </div>
+                </div>
+
+            </div>
+            <p>&copy; Made with ❤️ by Moneysmoke140.</p>
+        </div>
+    </footer>
+<script src="game.js"></script>
+</body>
+</html>
